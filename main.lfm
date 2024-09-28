@@ -22,4 +22,19 @@ object MainForm: TMainForm
       end>
     SimplePanel = False
   end
+  object LetterImage: TImage
+    Left = 96
+    Height = 235
+    Top = 117
+    Width = 256
+  end
+  object NextButton: TButton
+    Left = 268
+    Height = 25
+    Top = 365
+    Width = 75
+    Caption = 'Next'
+    TabOrder = 1
+    OnClick = OnNext
+  end
 end
