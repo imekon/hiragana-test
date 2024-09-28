@@ -1,4 +1,6 @@
 # Lazarus projects
 backup/
 lib/
+*.lps
+test
 

@@ -1,0 +1,9 @@
+object MainForm: TMainForm
+  Left = 243
+  Height = 559
+  Top = 145
+  Width = 742
+  Caption = 'Hiragana Test'
+  Position = poDesktopCenter
+  LCLVersion = '3.4.0.0'
+end
