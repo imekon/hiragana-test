@@ -4,8 +4,22 @@ object MainForm: TMainForm
   Top = 145
   Width = 742
   Caption = 'Hiragana Test'
+  ClientHeight = 559
+  ClientWidth = 742
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poDesktopCenter
   LCLVersion = '3.4.0.0'
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 541
+    Width = 742
+    Panels = <    
+      item
+        Text = '0 items'
+        Width = 50
+      end>
+    SimplePanel = False
+  end
 end

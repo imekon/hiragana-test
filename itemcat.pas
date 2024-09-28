@@ -18,6 +18,7 @@ type
     constructor Create;
     destructor Destroy; override;
     procedure Load(const filename: string);
+    function GetUsable: TItems;
 
     property Items: TItems read m_items;
   end;
@@ -76,6 +77,21 @@ begin
     item := TItem.Create(itemName, typeName, itemFilename);
     m_items.Add(item);
   end;
+end;
+
+function TItemCat.GetUsable: TItems;
+var
+  aitems: TItems;
+  item: TItem;
+
+begin
+  aitems := TItems.Create;
+  for item in m_items do
+  begin
+    if (item.TypeName = 'vowel') or (item.TypeName = 'letter') or (item.TypeName = 'combi') then
+      aitems.Add(item);
+  end;
+  result := aitems;
 end;
 
 end.
