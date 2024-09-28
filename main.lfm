@@ -4,6 +4,8 @@ object MainForm: TMainForm
   Top = 145
   Width = 742
   Caption = 'Hiragana Test'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   Position = poDesktopCenter
   LCLVersion = '3.4.0.0'
 end

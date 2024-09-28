@@ -67,8 +67,8 @@ end;
 
 destructor TItem.Destroy;
 begin
-  inherited Destroy;
   m_image.Free;
+  inherited Destroy;
 end;
 
 end.
